@@ -1,0 +1,16 @@
+---
+title: "Report Transparency"
+output: pdf_document
+params:
+  TF: NA
+  lplot: NA
+  labx: NA
+  per: NA
+---
+  
+Report su `r params$lplot` relativo al periodo `r params$per`
+
+**Tabella dati**
+```{r bbb,echo=FALSE}
+kable(  params$TF , align ='c' ,digit = 2  )
+```
